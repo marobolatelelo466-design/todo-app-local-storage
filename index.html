@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do App with Dark Mode</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="header">
+        <h1>To-Do List</h1>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </div>
+
+      <form id="todo-form">
+        <input
+          type="text"
+          id="todo-input"
+          placeholder="Add a new task..."
+          autocomplete="off"
+        />
+        <button type="submit" class="add-btn">Add</button>
+      </form>
+
+      <div class="toolbar">
+        <span id="task-count">0 tasks</span>
+        <button id="clear-completed" class="secondary">Clear completed</button>
+      </div>
+
+      <ul id="todo-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
